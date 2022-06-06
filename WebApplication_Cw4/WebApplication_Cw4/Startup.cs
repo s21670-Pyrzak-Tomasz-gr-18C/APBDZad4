@@ -11,6 +11,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebApplication_Cw4.Services;
 
 namespace WebApplication_Cw4
 {
@@ -26,11 +27,13 @@ namespace WebApplication_Cw4
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddTransient<IAnimalDbService, AnimalDbService>();
+
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebApplication_Cw4", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Transactions", Version = "v1" });
             });
         }
 
@@ -41,10 +44,8 @@ namespace WebApplication_Cw4
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebApplication_Cw4 v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Transactions v1"));
             }
-
-            app.UseHttpsRedirection();
 
             app.UseRouting();
 

@@ -1,18 +1,27 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using WebApplication_Cw4.Models;
+using WebApplication_Cw4.Services;
 
 namespace WebApplication_Cw4.Controllers
 {
-    [Route("api")]
+    [Route("api/[controller]")]
     [ApiController]
     public class AnimalsController : ControllerBase
     {
-        [HttpGet("animals")]
-        public IActionResult getAnimals()
+        private readonly IAnimalDbService _animalDbService;
+
+        public AnimalsController(IAnimalDbService animalsDbService)
         {
-            return Ok();
+            _animalDbService = animalsDbService;
         }
 
+        [HttpPost]
+        public async Task<IActionResult> AddAnimal(AnimalDTO animal)
+        {
+            MethodResult result = await _animalDbService.AddAnimalAsync(animal);
 
+            return StatusCode((int)result.StatusCode, result.Message);
+        }
     }
 }
