@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "eK/lnlZHDqrfOohJezLq2Jfh708/y4qbHb3x0q8racAzpsaNdV9Oz+I90VcJ3DR9a8Xa548hCdJZYgjl51K6Fw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\tpyrz\\source\\repos\\cwiczenia3_mp-s21670-Pyrzak-Tomasz-gr-18C\\WebApplication_Cw4\\WebApplication_Cw4\\WebApplication_Cw4.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tpyrz\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\tpyrz\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\tpyrz\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\tpyrz\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\tpyrz\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\tpyrz\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
